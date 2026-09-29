@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: rgb(19, 19, 19);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#calc {
+    width: 400px;
+    background-color: #181820;
+    border-radius: 10px;
+    height: 700px;
+    margin-top:5% ;
+     margin-bottom:5% ;
+    display: grid;
+    
+    grid-template-rows: 1fr 1fr;
+
+    
+}
+
+#input{
+    display: grid;
+    place-items: center;
+    
+}
+
+input{
+    width: 85%;
+    height: 60%;
+    font-size: 40px;
+    border-radius: 10px;
+    background-color: rgb(37, 77, 35);
+    color: rgb(134, 243, 100);
+    text-align: right;
+    caret-color: transparent;
+}
+
+#keys{
+    font-size: 35px;
+    color: aliceblue;
+    margin-inline: 11%;
+    display: grid;
+    grid-template-columns: 2fr 0.5fr ;
+    text-align: center;
+    gap: 18px;
+    margin-bottom: 50px;
+}
+
+#opt-btn{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.opt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.opt:hover,.operator:hover{
+    background-color: aliceblue;
+    color:rgb(19, 19, 19);
+}
+
+#c:hover{
+    background-color: rgb(172, 47, 47);
+}
+
+#c:active{
+    background-color: rgb(175, 76, 76);
+}
+
+#eql:hover{
+    background-color: aqua;
+}
+
+#eql:active{
+    background-color: rgb(106, 255, 255);
+}
+
+#numbers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+}
+
+.number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    
+}
+
+.number:hover{
+    background-color: #5c5969;
+    transition: 0.1s;
+}
+
+#operators{
+    display: grid;
+    
+    gap: 5px;
+   
+}
+
+.operator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.number:active, .opt:active, .operator:active{
+    background-color: #7c788f;
+}
